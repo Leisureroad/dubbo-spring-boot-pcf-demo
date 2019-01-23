@@ -1,0 +1,8 @@
+applications:
+- name: dubbo-autoconfig-sample-consumer
+  memory: 1G
+  path: target/dubbo-spring-boot-auto-configure-consumer-sample-0.2.1.jar
+  health-check-type: process
+
+###Add network policy###
+#cf add-network-policy dubbo-autoconfig-sample-consumer --destination-app dubbo-autoconfig-sample-provider --port 12345 --protocol tcp#

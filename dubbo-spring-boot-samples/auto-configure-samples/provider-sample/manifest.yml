@@ -1,0 +1,7 @@
+applications:
+- name: dubbo-autoconfig-sample-provider
+  memory: 1G
+  routes:
+  - route: dubbo-autoconfig-sample-provider.apps.internal
+  path: target/dubbo-spring-boot-auto-configure-provider-sample-0.2.1.jar
+  health-check-type: process

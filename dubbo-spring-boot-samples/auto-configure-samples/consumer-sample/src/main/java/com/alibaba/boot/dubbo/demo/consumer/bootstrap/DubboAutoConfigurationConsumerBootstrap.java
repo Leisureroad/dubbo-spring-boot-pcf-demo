@@ -36,7 +36,8 @@ public class DubboAutoConfigurationConsumerBootstrap {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Reference(version = "1.0.0", url = "dubbo://localhost:12345")
+//    @Reference(version = "1.0.0", url = "dubbo://localhost:12345")
+    @Reference(version = "1.0.0", url = "dubbo://dubbo-autoconfig-sample-provider.apps.internal:12345")
     private DemoService demoService;
 
     @Bean
